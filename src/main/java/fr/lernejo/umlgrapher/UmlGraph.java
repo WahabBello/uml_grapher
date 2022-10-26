@@ -1,12 +1,15 @@
 package fr.lernejo.umlgrapher;
 
 public class UmlGraph {
-    public UmlGraph(Class<?> classe) {
 
+    private final Class<?>[] graph_classes;
+
+    public UmlGraph(Class<?>... classes) {
+        this.graph_classes = classes;
     }
 
     public String as(GraphType mermaid) {
-        return mermaid.MERMAID.getTypeGraph();
+        return mermaid.typeGraph;
     }
 
 }

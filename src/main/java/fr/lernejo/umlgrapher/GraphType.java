@@ -2,20 +2,15 @@ package fr.lernejo.umlgrapher;
 
 public enum GraphType {
 
-    MERMAID("""
+    Mermaid("""
         classDiagram
         class Machin {
             <<interface>>
         }
         """);
-    private final String typeGraph;
+    final String typeGraph;
 
-    GraphType(String s) {
-        this.typeGraph = s;
+    GraphType(String typeGraph) {
+        this.typeGraph = typeGraph;
     }
-
-    public String getTypeGraph() {
-        return typeGraph;
-    }
-
 }
