@@ -10,7 +10,7 @@ class SampleTest {
     private final Sample sample = new Sample();
 
     @Test
-    void add_2_and_2_should_return_4() {
+    void add_2_and_2_equals_4() {
         int result = sample.op(Sample.Operation.ADD, 2, 2);
 
         Assertions.assertThat(result)
@@ -20,7 +20,6 @@ class SampleTest {
     @Test
     void fact_return_int() {
         int result = sample.fact( 4);
-
         boolean isInt = (result>=0);
 
         Assertions.assertThat(isInt)
@@ -28,7 +27,7 @@ class SampleTest {
             .isEqualTo(true);
     }
     @Test
-    void multi_2_and_3_should_return_6() {
+    void multi_2_and_3_should_equals_6() {
         int result = sample.op(Sample.Operation.MULT, 2, 3);
 
         Assertions.assertThat(result)
@@ -37,7 +36,7 @@ class SampleTest {
     }
 
     @Test
-    void fact_3_return_6() {
+    void fact_3_equals_6() {
         int result = sample.fact( 3);
 
         Assertions.assertThat(result)
